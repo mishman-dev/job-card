@@ -31,7 +31,7 @@ function Dashboard() {
                 </div>
                 <div className="new-jobcard">
                     <button>
-                        <span>+</span>
+                        +
                         New Job Card
                     </button>
                 </div>
