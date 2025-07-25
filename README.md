@@ -1,12 +1,36 @@
-# React + Vite
+# 🛠️ Job Card Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A web-based Job Card Management System built using React. This project is currently under development.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚧 Project Status
 
-## Expanding the ESLint configuration
+> **Status:** In Development  
+Core features are being implemented. Expect frequent updates and improvements.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📌 Features (Planned)
+
+- [x] React frontend setup
+- [ ] Create, view, and manage job cards
+- [ ] Job card status tracking (Pending, In Progress, Completed)
+- [ ] Assign jobs to employees
+- [ ] Upload images or documents related to each job
+- [ ] Admin dashboard
+- [ ] Role-based access control
+
+---
+
+## 🖥️ Tech Stack
+
+- **Frontend:** React, Tailwind CSS (or your styling framework)
+- **Backend:** (To be added)
+- **Database:** (To be decided)
+- **Version Control:** Git & GitHub
+
+---
+
+## 📁 Project Structure (Sample)
+
