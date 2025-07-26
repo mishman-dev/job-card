@@ -215,3 +215,32 @@
 .custom-toggle-switch.on::before {
     transform: translateX(16px); /* Moves the thumb to the right for on state */
 }
+
+.app-footer{
+    display: flex;
+}
+.app-footer p {
+    margin: 10px; /* Remove default paragraph margin */
+    font-size: 14px;
+}
+
+.footer-logo {
+    width: 90px; /* Adjust as needed */
+    height: auto;
+    /* Add any other specific styling for your logo */
+}
+
+/* Optional: Styles for the placeholder filter elements */
+.filter-search-section input,
+.filter-search-section select,
+.filter-search-section button {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.filter-search-section button {
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+.filter-search-section button:hover {
+    background-color: #e0e0e0;
+}

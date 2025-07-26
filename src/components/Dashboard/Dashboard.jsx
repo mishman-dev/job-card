@@ -3,8 +3,8 @@ import './Dashboard.css'
 import { FiAlertCircle } from "react-icons/fi";
 import { IoIosSearch } from "react-icons/io";
 import { CiFilter } from "react-icons/ci";
-import { BsToggleOn } from "react-icons/bs";
-import { BsToggleOff } from "react-icons/bs";
+import JobCardFormModal from '../JobCardFormModal/JobCardFormModal';
+
 
 
 function Dashboard() {
@@ -12,6 +12,11 @@ function Dashboard() {
 
     const [selectedOption, setSelectedOption] = useState('');
     const [isToggled, setIsToggled] = useState(false);
+    const [showModal, setShowModal] = useState(false);
+
+    const handleCreateJob = (jobData) => {
+        console.log("Job created:", jobData);
+    };
 
     const toggle = () => {
         setIsToggled(prev => !prev);
@@ -30,10 +35,13 @@ function Dashboard() {
                     <p>Track and manage your jobs</p>
                 </div>
                 <div className="new-jobcard">
-                    <button>
+                    <button onClick={() => setShowModal(true)}>
                         +
                         New Job Card
                     </button>
+                    {showModal && (
+                        <JobCardFormModal onClose={() => setShowModal(false)} />
+                    )}
                 </div>
             </div>
             <div className="job-card-container">
@@ -54,7 +62,7 @@ function Dashboard() {
                     <IoIosSearch className="search-icon" />
                     <input type="text" placeholder="Search job cards..." />
                 </div>
-                <div className='filters-and-toggle'> 
+                <div className='filters-and-toggle'>
                     <div className='option-drops'>
                         <select id="jobStatus" value={selectedOption} onChange={handleChange}>
                             <option value="">All Status</option>
